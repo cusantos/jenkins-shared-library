@@ -5,15 +5,15 @@ package ph.com.globe.isg.sdc.devops
  */
 class ScriptTest implements Serializable {
 
-    private final Script script
+    private final def script
 
-    ScriptTest(def script) {
+    ScriptTest(script) {
         this.script = script
     }
 
     def stuff(script) {
         script.node {
-            script.sh " echo running in ${script.env.JENKINS_URL}"
+            script.echo "running in ${script.env.JENKINS_URL}"
         }
     }
 }
