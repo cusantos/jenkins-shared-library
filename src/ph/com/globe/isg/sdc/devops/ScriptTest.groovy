@@ -5,7 +5,7 @@ package ph.com.globe.isg.sdc.devops
  */
 class ScriptTest implements Serializable {
 
-    private final def script
+    private final Script script
 
     ScriptTest(def script) {
         this.script = script
